@@ -4,6 +4,9 @@ import fetchCountries from './fetchCountries';
 import renderCountries from './renderCountries';
 function inputHandler(event) {
   const country = event.target.value;
+  if (country == '') {
+    return;
+  }
   fetchCountries(country).then(countries =>
     renderCountries(countries, refs.countriesListRef),
   );
