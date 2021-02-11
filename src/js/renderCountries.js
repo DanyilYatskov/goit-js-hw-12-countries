@@ -5,7 +5,7 @@ import countriesListTemplate from '../templates/countriesListTemplate.hbs';
 import singleCountryTmp from '../templates/singleCountryTmp.hbs';
 export default function renderCountries(itemList, ref) {
   ref.innerHTML = '';
-  //console.log(itemList);
+
   if (itemList.length > 10) {
     ref.insertAdjacentHTML('beforeend', 'Be more specific');
     return;
@@ -21,4 +21,5 @@ export default function renderCountries(itemList, ref) {
 function render(itemList, template, ref) {
   const markup = template(itemList);
   ref.insertAdjacentHTML('beforeend', markup);
+  ref.style.borderStyle = 'solid';
 }

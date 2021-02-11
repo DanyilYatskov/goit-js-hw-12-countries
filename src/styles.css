@@ -18,4 +18,41 @@ body {
 }
 .countryName {
   font-size: 20px;
+  font-weight: 400;
+  width: 520px;
+  height: 40px;
+}
+.countries-container {
+  width: 520px;
+  border-color: gray;
+  border-radius: 0.5;
+  padding: 5px;
+}
+.countriesList {
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.singleCountry {
+  padding: 0;
+  list-style: none;
+}
+.singleCountry-item {
+  font-size: 24px;
+  font-weight: 400;
+}
+.singleCountry-item .text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.singleCountry-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.singleCountry-name {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
 }
