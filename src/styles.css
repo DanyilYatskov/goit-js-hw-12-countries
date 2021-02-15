@@ -56,3 +56,6 @@ body {
   font-weight: 900;
   text-align: center;
 }
+.countryList-item {
+  cursor: pointer;
+}

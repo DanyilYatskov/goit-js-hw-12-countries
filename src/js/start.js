@@ -7,8 +7,8 @@ function inputHandler(event) {
   if (country == '') {
     return;
   }
-  fetchCountries(country).then(countries =>
-    renderCountries(countries, refs.countriesListRef),
-  );
+  fetchCountries(country).then(countries => {
+    renderCountries(countries, refs.countriesListRef);
+  });
 }
 refs.cNameInputRef.addEventListener('input', debounce(inputHandler, 500));
